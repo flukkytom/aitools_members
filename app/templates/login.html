@@ -1,0 +1,95 @@
+{% extends "aitools_base.html" %}
+{% block title %}AiTools - a Blacktech Company{% endblock %}
+{% block body %}
+
+<body class="app sidebar-mini ltr">
+
+    <!-- BACKGROUND-IMAGE -->
+    <div class="login-img">
+
+        <!-- GLOABAL LOADER -->
+        <div id="global-loader">
+            <img src="static/assets/images/loader.svg" class="loader-img" alt="Loader">
+        </div>
+        <!-- /GLOABAL LOADER -->
+
+        <!-- PAGE -->
+        <div class="page">
+            <div class="">
+
+                <!-- CONTAINER OPEN -->
+                <div class="col col-login mx-auto mt-7">
+                    <div class="text-center">
+                        <img src="static/ext_images/ai_logo.png" class="header-brand-img" alt="">
+                    </div>
+                </div>
+
+                <div class="container-login100">
+                    <div class="wrap-login100 p-6">
+                        <form class="login100-form validate-form" method="POST">
+                            <span class="login100-form-title pb-5">
+                                Login
+                            </span>
+                            <div class="panel panel-primary">
+                                <div class="panel-body tabs-menu-body p-0 pt-5">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab5">
+                                            <div class="wrap-input100 validate-input input-group" data-bs-validate="Valid email is required: ex@abc.xyz">
+                                                <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                                    <i class="zmdi zmdi-email text-muted" aria-hidden="true"></i>
+                                                </a>
+                                                <input name="email" class="input100 border-start-0 form-control ms-0" type="email" placeholder="Email">
+                                            </div>
+                                            <div class="wrap-input100 validate-input input-group" id="Password-toggle">
+                                                <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
+                                                    <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
+                                                </a>
+                                                <input name="password" class="input100 border-start-0 form-control ms-0" type="password" placeholder="Password">
+                                            </div>
+                                            <div class="text-end pt-4">
+                                                <p class="mb-0"><a href="/register" class="text-primary ms-1">Not Registered? Register Here</a></p>
+                                            </div>
+                                            <div class="container-login100-form-btn">
+                                                <button class="btn btn-primary login100-form-btn" type="submit">LogIn</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- CONTAINER CLOSED -->
+            </div>
+        </div>
+        <!-- End PAGE -->
+
+    </div>
+    <!-- BACKGROUND-IMAGE CLOSED -->
+
+    <!-- JQUERY JS -->
+    <script src="static/assets/js/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="static/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- SHOW PASSWORD JS -->
+    <script src="static/assets/js/show-password.min.js"></script>
+
+    <!-- GENERATE OTP JS -->
+    <script src="static/assets/js/generate-otp.js"></script>
+
+    <!-- Perfect SCROLLBAR JS-->
+    <script src="static/assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+
+    <!-- Color Theme js -->
+    <script src="static/assets/js/themeColors.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="static/assets/js/custom.js"></script>
+    
+    {% endblock %}
+
+    

@@ -1,0 +1,147 @@
+{% extends "aitools_base.html" %}
+{% block title %}AiKloud - a BlackTech Company{% endblock %}
+{% block body %}
+
+<body class="app sidebar-mini ltr light-mode">
+
+    <!-- GLOBAL-LOADER -->
+    <!-- <div id="global-loader">
+        <img src="/static/assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div> -->
+    <!-- /GLOBAL-LOADER -->
+
+    <!-- PAGE -->
+    <div class="page">
+        <div class="page-main">
+
+            <!-- app-Header -->
+            <div class="app-header header sticky">
+                {% include 'partials/header.html' %}
+            </div>
+            <!-- /app-Header -->
+
+            <!-- App Sidebar
+            ============================================= -->
+            {% include 'partials/sidebar.html' %}
+            <!-- Sidebar end --> 
+
+            <!--app-content open-->
+            <div class="main-content app-content mt-0">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container container-fluid">
+
+                        <!-- PAGE-HEADER -->
+                        <div class="page-header">
+                            <h1 class="page-title">Submit New AiTool</h1>
+                            <div>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Submission</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- PAGE-HEADER END -->
+
+                        <!--Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">AiTools Submission Manager</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <form method="POST" class="form-control">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Title (Site Name)<span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Site Name" name="title" maxlength="50">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Website URL (Full URL with https://)<span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Website URL" name="website" maxlength="50">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Website Description<span class="text-red">*</span></label>
+                                                        <textarea name="description" rows="4" cols="100%"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">KeyWords (seperate with a comma)<span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="keywords" name="keywords" maxlength="100">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Business Email <span class="text-red">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Business Email" name="business_email" maxlength="56">
+                                                    </div>
+                                                </div>
+                                                <div class="form-footer mt-2 col-md-4">
+                                                    <button class="btn btn-primary login100-form-btn" type="submit">SUBMIT NEW AI WEBSITE</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Row-->
+                    </div>
+                    <!-- CONTAINER END -->
+                </div>
+            </div>
+            <!--app-content close-->
+
+        </div>
+
+    </div>
+
+     <!-- BACK-TO-TOP -->
+     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+     <!-- JQUERY JS -->
+     <script src="/static/assets/js/jquery.min.js"></script>
+ 
+     <!-- BOOTSTRAP JS -->
+     <script src="/static/assets/plugins/bootstrap/js/popper.min.js"></script>
+     <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+ 
+ 
+     <!-- SIDEBAR JS -->
+     <script src="/static/assets/plugins/sidebar/sidebar.js"></script>
+ 
+     <!-- INTERNAL SELECT2 JS -->
+     <script src="/static/assets/plugins/select2/select2.full.min.js"></script>
+ 
+     <!-- INTERNAL Data tables js-->
+     <!-- DATA TABLE JS-->
+     <script src="/static/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+     <script src="/static/assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+     <script src="/static/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+     <script src="/static/assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+     <script src="/static/assets/plugins/datatable/js/jszip.min.js"></script>
+     <script src="/static/assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+     <script src="/static/assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+     <script src="/static/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+     <script src="/static/assets/plugins/datatable/js/buttons.print.min.js"></script>
+     <script src="/static/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+     <script src="/static/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+     <script src="/static/assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+     <script src="/static/assets/js/table-data.js"></script>
+ 
+ 
+     <!-- Color Theme js -->
+     <script src="/static/assets/js/themeColors.js"></script>
+ 
+     <!-- CUSTOM JS -->
+     <script src="/static/assets/js/custom.js"></script>
+ 
+     {% endblock %}

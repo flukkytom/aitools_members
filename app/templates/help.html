@@ -1,0 +1,107 @@
+{% extends "aitools_base.html" %}
+{% block title %}AiKloud - A BlackTech Ai Company{% endblock %}
+{% block body %}
+
+<body class="app sidebar-mini ltr light-mode">
+
+    <!-- GLOBAL-LOADER -->
+    <div id="global-loader">
+        <img src="/static/assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /GLOBAL-LOADER -->
+
+    <!-- PAGE -->
+    <div class="page">
+        <div class="page-main">
+
+            <!-- app-Header -->
+            <div class="app-header header sticky">
+                {% include 'partials/header.html' %}
+            </div>
+            <!-- /app-Header -->
+
+            <!-- App Sidebar
+            ============================================= -->
+            {% include 'partials/sidebar.html' %}
+            <!-- Sidebar end --> 
+
+            <!--app-content open-->
+            <div class="main-content app-content mt-0">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container container-fluid">
+
+                        <!-- PAGE-HEADER -->
+                        <div class="page-header">
+                            <h1 class="page-title">Help & Support </h1>
+                            <div>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">AiKloud Help</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- PAGE-HEADER END -->
+                            <!-- ROW-3 OPEN -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card mt-7">
+                                        <div class="card-body p-5 text-dark">
+                                            <div class="statistics-info p-4">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <div class="">
+                                                            <h2 class="fw-bold">We are your #1<span class="text-primary"> STOP</span> for your Ai Search.</h2>
+                                                            <h4 class="leading-normal">....</h4>
+                                                            <p>If you need any help or have any suggestions, kindly reach out to us</p>
+                                                            <p><strong>Email: [Dear Cloud Guru, Please update this email to a valid Email]</strong></p>
+                                                            <p><strong>Phone: [Dear Cloud Guru, Please update this number to a valid number]</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="text-center">
+                                                            <img src="/static/ext_images/ai_logo.png" width="300px" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ROW-3 CLOSED -->
+                    </div>
+                    <!-- CONTAINER END -->
+                </div>
+            </div>
+            <!--app-content close-->
+
+        </div>
+
+    </div>
+
+     <!-- BACK-TO-TOP -->
+     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+     <!-- JQUERY JS -->
+     <script src="/static/assets/js/jquery.min.js"></script>
+ 
+     <!-- BOOTSTRAP JS -->
+     <script src="/static/assets/plugins/bootstrap/js/popper.min.js"></script>
+     <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+ 
+ 
+     <!-- SIDEBAR JS -->
+     <script src="/static/assets/plugins/sidebar/sidebar.js"></script>
+ 
+     <!-- INTERNAL SELECT2 JS -->
+     <script src="/static/assets/plugins/select2/select2.full.min.js"></script>
+ 
+     <!-- Color Theme js -->
+     <script src="/static/assets/js/themeColors.js"></script>
+ 
+     <!-- CUSTOM JS -->
+     <script src="/static/assets/js/custom.js"></script>
+ 
+     {% endblock %}

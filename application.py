@@ -13,7 +13,7 @@ from app import init_app
 
 config_name = os.getenv('FLASK_CONFIG')
 default_host = "0.0.0.0"
-default_port = "8080"
+default_port = "8081"
 
 # Set up the command-line options
 parser = optparse.OptionParser()

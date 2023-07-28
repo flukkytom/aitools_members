@@ -15,6 +15,6 @@ class Config:
     FLASK_ENV = environ.get('FLASK_ENV')
 
     # Database
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/ai_tools' #environ.get("SQLALCHEMY_DATABASE_URI")
+    SQLALCHEMY_DATABASE_URI = "mysql://admin_aikloud:TyB!acK909@aikloud.c8shiwtyuql5.us-east-1.rds.amazonaws.com/aikloud_db"
     SQLALCHEMY_ECHO = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False

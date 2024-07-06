@@ -25,25 +25,26 @@ To create Tokens for Password for Git Clone
 `virtualenv environment`
 (If you encounter a virtualenv: command not found. Use `yum install virtualenv`)
 
-6. Activate your Virtual Environment
-`source environment/bin/activate`
-
-7. Install GCC
+5. Install GCC
 `yum install gcc`
 
-8. Install Python Devel
+6. Install Python Devel
 `yum install python-devel`
 
-9. Find Mysql Devel
+7. Find Mysql Devel
 `sudo yum search mysql | grep devel`
+   ont worry if this step gives you an error, try #step 7 nonetheless if your are using Linux AMI 2023)
 
-10. Install the Devel found (Mine was mariadb105-devel)
+8. Install the Devel found (mariadb105-devel)
 `sudo yum install mariadb105-devel`
 
-11. Install the Application requirements
+9. Activate your Virtual Environment
+`source environment/bin/activate`
+
+10. Install the Application requirements
 `pip install -r requirements.txt`
 
-12. Run your Application
+11. Run your Application
 `python application.py`
 
 

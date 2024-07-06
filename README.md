@@ -1,13 +1,6 @@
 # aitools_members
 AI Tools Member Application
 
-# aitools_members
-AiKloud Admin Application
-
-The Admin (Adama) Application helps to approve Ai Tools Submission.
-
-Run the download_nltk.py script once to enable searfch application
-
 
 1. Install Git
 `sudo yum install git`
